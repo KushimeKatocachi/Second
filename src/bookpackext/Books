@@ -1,0 +1,37 @@
+public class Books1 {
+    String title;
+    String author;
+}
+
+public class Test1 {
+    public static void main(String[] args) {
+
+        Books1 b1 = new Books1();
+        Books1 b2 = new Books1();
+        Books1 b3 = new Books1();
+
+        Books1[] myBooks = new Books1[3];
+
+        int x = 0;
+
+        myBooks[0] = b1;
+        myBooks[1] = b2;
+        myBooks[2] = b3;
+
+        myBooks[0].title = "wa";
+        myBooks[1].title = "we"; 
+        myBooks[2].title = "ww";
+
+
+        myBooks[0].author = "aa";
+        myBooks[1].author = "ae";
+        myBooks[2].author = "aw";
+
+        while (x < 3) {
+            System.out.println(myBooks[x].title);
+            System.out.println(" author: ");
+            System.out.println(myBooks[x].author);
+            x = x + 1;
+        }
+    }
+}
